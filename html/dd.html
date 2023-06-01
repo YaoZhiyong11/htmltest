@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="aa.js"></script> -->
+    <style>
+        .g-progress {
+            position: relative;
+            margin: auto;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: conic-gradient(#FFCDB2 0, #FFCDB2 25%, #B5838D 25%, #B5838D);
+            mask: radial-gradient(transparent, transparent 50%, #000 51%, #000 0);
+
+            &::before {
+                position: absolute;
+                top: 20px;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+                border-radius: 50%;
+                background: #fff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<script src="../js/echarts.min.js"></script>
+<script src="index.js"></script>
+
+</html>

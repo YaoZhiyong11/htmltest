@@ -1,0 +1,98 @@
+//导航栏布局
+
+//css初始化
+* {
+    margin: 0; // 左右上下的边距
+    padding: 0; //四面边距
+    box-sizing: border-box; //初始化
+}
+
+ul {
+    list-style: none; //去掉列表的符号
+}
+
+p {
+    margin: 0; // 左右上下的边距
+    padding: 0; //四面边距
+    box-sizing: border-box; //初始化
+}
+
+//链接
+a {
+    text-decoration: none; //取消下划线
+    // color: #666;
+    font-size: 18px;
+}
+
+.navigation {
+    position: absolute;
+    width: 1.25rem;
+    height: 13.5rem;
+    background: #191932;
+
+    .logo {
+        // position: relative;
+        // width: 100%;
+        // height: 10%;
+        // // background-color: aliceblue;
+        // text-align: center;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: center;
+
+        #lz {
+            width: .5rem;
+            height: .5rem;
+        }
+    }
+
+    .menu_button {
+        position: relative;
+        width: 100%;
+        height: 9.45rem;
+        // background-color: aliceblue;
+        text-align: center;
+
+        .nav {
+            position: relative;
+            top: 2.25rem;
+            width: 100%;
+            height: 4.75rem;
+            // background-color: rgb(124, 127, 130);
+            text-align: center;
+
+            .nav-item {
+                position: relative;
+                width: 100%;
+                height: .75rem;
+                margin-bottom: 0.1875rem; //和下一个的距离
+
+                .nav-link {
+                    width: 100%;
+                    height: 100%;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 1rem;
+                    font-size: .25rem;
+                    color: rgb(224, 224, 224);
+                }
+
+                .nav-linkPress {
+                    color: bisque;
+                }
+
+                .nav-link:hover {
+                    color: bisque;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        position: relative;
+        width: 100%;
+        height: 2.7rem;
+        // background-color: aliceblue;
+        text-align: center;
+    }
+}
